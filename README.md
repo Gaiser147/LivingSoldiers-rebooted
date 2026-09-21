@@ -29,8 +29,8 @@ your game or server folder.
 
 | You are playing | Download |
 | --- | --- |
-| Single player or hosting co-op | `LivingSoldiers_<version>.zip` |
-| Running a dedicated server | `LivingSoldiers_<version>_Server.zip` |
+| Single player or hosting co-op | `LivingSoldiers-rebooted_<version>.zip` |
+| Running a dedicated server | `LivingSoldiers-rebooted_<version>_Server.zip` |
 
 **Then:**
 
