@@ -1,4 +1,4 @@
-# LivingSoldiers
+# LivingSoldiers Rebooted
 
 Revive the injured tactical soldiers scattered around the island in
 **Sons of the Forest**. Once recovered they work like Kelvin: fetch logs and
