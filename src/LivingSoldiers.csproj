@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>LivingSoldiers</AssemblyName>
+    <RootNamespace>CharacterReplacement</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <NoStdLib>true</NoStdLib>
+    <NoCompilerStandardLib>true</NoCompilerStandardLib>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Version>1.19.0</Version>
+    <DebugType>none</DebugType>
+    <Deterministic>true</Deterministic>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GRoot>/mnt/user-data/uploads/Sons Of The Forest/_Redloader</GRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(GRoot)/dotnet/*.dll" Private="false" />
+    <Reference Include="$(GRoot)/net6/*.dll" Private="false" />
+    <Reference Include="$(GRoot)/Game/*.dll" Private="false" />
+  </ItemGroup>
+</Project>
