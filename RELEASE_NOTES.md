@@ -1,20 +1,32 @@
 ## Downloads
 
-| File | For |
+| You are playing | Download |
 | --- | --- |
-| `LivingSoldiers_v1.19.0.zip` | Single player and co-op host |
-| `LivingSoldiers_v1.19.0_Server.zip` | Dedicated server |
+| Single player or hosting co-op | `LivingSoldiers_v1.19.0.zip` |
+| Running a dedicated server | `LivingSoldiers_v1.19.0_Server.zip` |
 
 Same DLL in both. The larger package adds the `character` asset bundle for the
 soldiers' appearance, which is only needed where something is actually drawn.
 Other players do not need the mod.
 
+## Install
+
+Requires [RedLoader](https://github.com/ToniMacaroni/RedLoader).
+
+1. Open the zip. It contains a folder called `Mods`.
+2. Copy that `Mods` folder into your game folder, next to
+   `SonsOfTheForest.exe` (on a server: next to `SonsOfTheForestDS.exe`).
+3. Start the game. On a server, restart it from your host's panel.
+
+On a Linux server, set `WINEDLLOVERRIDES=winhttp=n,b` before the server starts,
+otherwise RedLoader never loads and the mod is silently missing.
+
 ## What is new
 
 **Crash sites are visible again.** The flare and the smoke column are two
-separate objects — `FlareLit` and `DeadTactiSmoke` — and the column sits next to
-the flare, not below it. Only the flare was being taken off the wreck, so the
-column disappeared along with the wreck. Both are now detached, kept lit, and
+separate objects, `FlareLit` and `DeadTactiSmoke`, and the column sits next to
+the flare rather than below it. Only the flare was being taken off the wreck, so
+the column disappeared along with the wreck. Both are now detached, kept lit, and
 re-lit by a watchdog if their particle systems stop.
 
 **Map markers only after a rescue.** Every soldier used to be put on the map at
@@ -23,9 +35,9 @@ startup, which gave away all crash sites from the first minute.
 **Duplicate spawns fixed** (since 1.13.0). Soldiers far from every player exist
 only in the game's world simulation. The mod searched among real actors alone,
 found none at server start and spawned a fresh set every time while the old ones
-stayed — 109 Kelvin-type actors instead of 18 after a few restarts, which put the
-server at roughly 13 FPS. Use `/lsremove dupes` to clean an affected save, at
-least a minute after the server started.
+stayed. That produced 109 Kelvin-type actors instead of 18 after a few restarts,
+which put the server at roughly 13 FPS. Use `/lsremove dupes` to clean an
+affected save, at least a minute after the server started.
 
 **Administration and diagnostics.** `/lshelp` for the command overview,
 `/lsremove` for cleanup, `/lsperf` and `/lsprofil` for server performance and a

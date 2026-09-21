@@ -30,7 +30,7 @@ mod by Toni Macaroni and are not covered here.
 ## 1.16.0
 
 - Flares are detached from the wreck instead of copied. A copy starts as a fresh,
-  not yet running particle system — only the sound restarted by itself, which is
+  not yet running particle system, only the sound restarted by itself, which is
   why the flare was audible but invisible.
 - Map markers appear only after a soldier has been revived. They used to be set
   up for every soldier, so all crash sites were on the map from the start.
@@ -38,12 +38,12 @@ mod by Toni Macaroni and are not covered here.
 ## 1.15.0
 
 - `/lsremove dupes` refuses to run while the mod has not read its own soldiers
-  yet — right after a restart that would have classified every soldier as
+  yet, right after a restart that would have classified every soldier as
   surplus and deleted all of them. `/lsremove dupes force` overrides it.
 
 ## 1.14.0
 
-- `/lsprofil`: splits one server frame into its parts — the game's own AI world
+- `/lsprofil`: splits one server frame into its parts, the game's own AI world
   simulation with a stopwatch around each stage, the network layer's own
   timings, physics steps per frame, and the size of the base in build pieces.
 

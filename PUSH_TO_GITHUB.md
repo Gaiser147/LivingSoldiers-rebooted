@@ -42,4 +42,4 @@ git push -u origin main
 The source here was reconstructed from the released DLL of someone else's mod,
 and the package contains their character assets. Publishing it would
 redistribute their work. If you want the repository public, ask Toni Macaroni
-first — the credit in the README is not a substitute for permission.
+first, the credit in the README is not a substitute for permission.

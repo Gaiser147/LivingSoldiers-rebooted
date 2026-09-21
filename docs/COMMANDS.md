@@ -1,6 +1,6 @@
 # Command reference
 
-Typed in chat by a server owner — your Steam ID has to be listed in
+Typed in chat by a server owner, your Steam ID has to be listed in
 `ownerswhitelist.txt`. `/lshelp` prints the same overview in game.
 
 ## Soldiers
@@ -22,7 +22,7 @@ Typed in chat by a server owner — your Steam ID has to be listed in
 | `/lsget` | Tell everyone to fetch materials |
 | `/lsfollow` | Everyone follows you |
 | `/lsstay` | Everyone stays where they are |
-| `/lsbreaks on\|off` | No breaks — they keep working until there is nothing left |
+| `/lsbreaks on\|off` | No breaks, they keep working until there is nothing left |
 
 `/lsfollow` and `/lsstay` put the auto jobs on hold. They resume once you give a
 work command again.
@@ -50,9 +50,9 @@ a bigger area every time.
 | `/lsremove <name>` | Remove one specific soldier |
 | `/lsremove alle` | Remove every soldier |
 
-Removal is permanent and survives a restart. The story Kelvin is never removed —
-he is identified by the lowest actor id, since he exists from the moment the
-world is created.
+Removal is permanent and survives a restart. The story Kelvin is never removed. He is
+identified by the lowest actor id, since he exists from the moment the world is
+created.
 
 Run `/lsremove dupes` at least a minute after the server started. Before that the
 mod has not read its own soldiers yet, and every soldier would count as surplus.
